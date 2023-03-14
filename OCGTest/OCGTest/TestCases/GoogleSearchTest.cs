@@ -1,6 +1,5 @@
 ﻿using NUnit.Framework;
 using OCGTest.PageObject;
-using OCGTest.TestData;
 using OCGTest.WebTestSetup;
 
 namespace OCGTest.TestCases
@@ -16,10 +15,10 @@ namespace OCGTest.TestCases
         [Test]
         public void SearchByTextAndPressEnter()
         {
-            Asserter.AssertElementIsDisplayed(HomePageData.GoogleLogo);
+            HomePage.VerifyUserIsInTheHomePage();
             HomePage.InputTextToSearchBox("OpenCommerce Group");
             HomePage.PressEnterToFind();
-            Asserter.AssertElementIsDisplayed(SearchResultPageData.ResultStat);
+            SearchResultPage.VerifyUserIsDirectedToTheSearchResultPage();
         }
     }
 }

@@ -382,7 +382,7 @@ namespace AutomationFramework.DriverCore
             else
             {
                 HighlightElem(e);
-                HtmlReport.Pass("Element [" + locator + "] is displayed", TakeScreenShot());
+                HtmlReport.Pass("Element [" + locator + "] is displayed");
                 return true;
             }
         }
