@@ -28,13 +28,12 @@ namespace OCGTest.WebTestSetup
         public void WebTestSetUp()
         {
             /// Initialize header pages
-            ConfigManager_ = new ConfigManager();
             DriverBaseAction = new WebDriverAction();
             string appConfig = ConfigManager.GetConfig<AppConfig>("Application").BaseUrl;
             DriverBaseAction.GoToUrl(appConfig);
-            Console.Write(appConfig);
             HomePage = new HomePage();
             SearchResultPage = new SearchResultPage();
+            Asserter = new Asserter.Asserter();
 
 
         }

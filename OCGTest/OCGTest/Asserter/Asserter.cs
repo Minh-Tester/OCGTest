@@ -14,18 +14,5 @@ namespace OCGTest.Asserter
             VerifyElementIsDisplayed(locator).Should().BeTrue();
         }
         #endregion
-
-        #region CHECK EQUALS
-        public void AssertViewUserEquals(string actual, string expected)
-        {
-            AssertEquals(actual, expected);
-        }
-        public void AssertDetailedUserEquals(string actual, string expected)
-        {
-            AssertEquals(actual, expected);
-        }
-
-
-        #endregion
     }
 }

@@ -1,10 +1,11 @@
 ﻿using NUnit.Framework;
 using OCGTest.PageObject;
+using OCGTest.TestData;
 using OCGTest.WebTestSetup;
 
 namespace OCGTest.TestCases
 {
-    
+
     public class GoogleSearchTest : NUnitWebTestSetUp
     {
         public GoogleSearchTest(string browser, int width, int height) : base(browser, width, height)
@@ -15,10 +16,10 @@ namespace OCGTest.TestCases
         [Test]
         public void SearchByTextAndPressEnter()
         {
-            HomePage.IsGoogleHomePageDisplay();
+            Asserter.AssertElementIsDisplayed(HomePageData.GoogleLogo);
             HomePage.InputTextToSearchBox("OpenCommerce Group");
             HomePage.PressEnterToFind();
-            SearchResultPage.IsResulStatDisplay();
+            Asserter.AssertElementIsDisplayed(SearchResultPageData.ResultStat);
         }
     }
 }

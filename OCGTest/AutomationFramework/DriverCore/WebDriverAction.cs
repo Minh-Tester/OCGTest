@@ -235,7 +235,7 @@ namespace AutomationFramework.DriverCore
                 Clear(locator);
                 SendKeys(locator, key);
                 HtmlReport.Pass("Clearing previous input in [" + locator + "] and " +
-                    "replacing it with [" + key + "] passed", TakeScreenShot());
+                    "replacing it with [" + key + "] passed");
             }
             catch (Exception excep)
             {
@@ -252,7 +252,7 @@ namespace AutomationFramework.DriverCore
                 IJavaScriptExecutor jsDriver = (IJavaScriptExecutor)Driver;
                 string highlightJavascript = "arguments[0].style.border='2px solid red'";
                 jsDriver.ExecuteScript(highlightJavascript, new object[] { e });
-                HtmlReport.Pass("Highlight element [" + e.ToString() + "] passed", TakeScreenShot());
+                HtmlReport.Pass("Highlight element [" + e.ToString() + "] passed");
                 return e;
 
             }
@@ -382,7 +382,7 @@ namespace AutomationFramework.DriverCore
             else
             {
                 HighlightElem(e);
-                HtmlReport.Pass("Element [" + e.Text + "] is displayed", TakeScreenShot());
+                HtmlReport.Pass("Element [" + locator + "] is displayed", TakeScreenShot());
                 return true;
             }
         }

@@ -48,14 +48,6 @@ namespace AutomationFramework.DriverCore
                 driver.Value = newDriver;
             }
 
-            //else if (frameworkConfiguration.ExecuteLocation.Equals("browserstack"))
-            //{
-            //    newDriver = CreateBrowserstackDriver(browser, width, height);
-            //}
-
-
-
-
         }
         public static IWebDriver GetCurrentDriver()
         {

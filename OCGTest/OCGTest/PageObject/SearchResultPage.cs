@@ -5,27 +5,7 @@ namespace OCGTest.PageObject
 {
     public class SearchResultPage : WebDriverAction
     {
-        private string resultStat = "//div[contains(@id, \"result-stats\")]";
-
-
         public SearchResultPage() : base()
-        {
-
-        }
-
-        public bool IsResulStatDisplay()
-        {
-            try
-            {
-                WaitToBeVisible(resultStat);
-                TestContext.WriteLine("Redirect to Search Result page successfully");
-                return true;
-            }
-            catch
-            {
-                TestContext.WriteLine("Redirect to Search Result page unsuccessfully");
-                return false;
-            }
-        }
+        { }
     }
 }
