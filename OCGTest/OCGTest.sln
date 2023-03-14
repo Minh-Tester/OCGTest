@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCGTest", "OCGTest\OCGTest.csproj", "{169C6B9D-362D-434F-A2C2-3553C112BD4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutomationFramework", "AutomationFramework\AutomationFramework.csproj", "{42D93F39-14AD-49E8-B927-1E4762AA4101}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{169C6B9D-362D-434F-A2C2-3553C112BD4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{169C6B9D-362D-434F-A2C2-3553C112BD4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{169C6B9D-362D-434F-A2C2-3553C112BD4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{169C6B9D-362D-434F-A2C2-3553C112BD4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42D93F39-14AD-49E8-B927-1E4762AA4101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42D93F39-14AD-49E8-B927-1E4762AA4101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42D93F39-14AD-49E8-B927-1E4762AA4101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42D93F39-14AD-49E8-B927-1E4762AA4101}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3481D3D8-63D1-4445-A4FB-BAF34469CA55}
+	EndGlobalSection
+EndGlobal
